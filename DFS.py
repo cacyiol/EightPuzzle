@@ -1,9 +1,9 @@
 import copy
 #棋盘的类，实现移动和扩展状态
 class grid:
-    def __init__(self, stat):
+    def __init__(self, stat, endTarget):
         self.pre = None
-        self.target = [[1, 2, 3], [0, 8, 4], [7, 6, 5]]
+        self.target = endTarget
         self.stat = stat
         self.find0()
         self.update()
